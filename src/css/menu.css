@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+   /*  outline: 1px solid red; */
+    font-family: "SUSE Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+}
+body {
+    background-color: #E9E294;
+}
