@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* outline: 1px solid red; */
+    /*    outline: 1px solid red; */
     font-family: "SUSE Mono", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
@@ -161,18 +161,23 @@ header {
 }
 
 .carrusel-contenedor {
+    min-width: 100%;
+    min-height: 100%;
     display: flex;
     transition: transform 0.5s ease-in-out;
+    object-fit: contain;
 }
 
 .carrusel-item {
     min-width: 100%;
+    min-height: 100%;
 }
 
 .carrusel-item img {
-    width: 100%;
-    display: block;
+    min-width: 100%;
+    min-height: 100%;
     border-radius: 12px;
+    object-fit: contain;
 }
 
 /* Botones */
@@ -233,47 +238,54 @@ header {
     margin-bottom: 2rem;
 
 }
-.nuestro-menu div{
+
+.nuestro-menu div {
     width: 50%;
     height: 30vh;
     background-color: #fff;
     border-radius: 20px;
     margin-left: 20%;
     margin-top: 100px;
-    img{
+
+    img {
         width: 20%;
         height: 100px;
         position: relative;
         left: 5%;
         top: 10%;
-        border-radius:20px;
-        object-fit:contain;
+        border-radius: 20px;
+        object-fit: contain;
     }
-    span{
+
+    span {
         font-size: 1.2rem;
         position: relative;
         left: 20%;
         top: -50px;
         font-weight: bold;
     }
-    ol{
-        width: 30%;
+
+    ol {
+        width: 60%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         position: relative;
-        left: 43%;
+        left: 23%;
         top: -40px;
         list-style: none;
-        li{
+
+        li {
             width: 100%;
+            margin-top: 2px;
             display: flex;
             justify-content: center;
-            margin-top: 2px;
+            align-items: center;
         }
     }
-    button{
+
+    button {
         width: 20%;
         height: 30px;
         border-radius: 10px;
@@ -288,10 +300,33 @@ header {
         box-shadow: 0px 0px 5px rgb(0, 0, 0);
     }
 }
-.quienes-somos{
+
+.card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.726), 0 10px 10px -5px rgba(0, 0, 0, 0.836);
+    border-color: rgba(124, 58, 237, 0.2);
+    img {
+        box-shadow: #FFB703 0px 0px 55px;
+        border: #FFB703 2px solid;
+        transform: translateY(-10px);
+    }
+    span{
+        color: #FFB703; 
+    }
+    li{
+        color: #AC5C02;
+    }
+    button{
+        background-color: #AC5C02;
+        color: white;
+        box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    }
+}
+
+
+.quienes-somos {
     width: 40%;
     height: 100vh;
-    background-color: rgb(251, 255, 0);
+    background-color: #B98400;
     border-radius: 20px;
     position: absolute;
     top: 160vh;
@@ -299,11 +334,13 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    h2{
+
+    h2 {
         font-size: 3rem;
         margin-top: 2rem;
     }
-    p{
+
+    p {
         position: relative;
         top: 15px;
         width: 80%;

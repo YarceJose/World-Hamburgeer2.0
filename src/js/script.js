@@ -1,3 +1,4 @@
+/* carrusel */
 const carrusel = document.querySelector(".carrusel-contenedor");
 const items = document.querySelectorAll(".carrusel-item");
 const prev = document.querySelector(".prev");
@@ -34,4 +35,10 @@ prev.addEventListener("click", () => {
 next.addEventListener("click", () => {
   index = index < items.length - 1 ? index + 1 : 0;
   moverCarrusel(index);
-}); 
+});
+
+
+/* Funcion de redireccion ah la vista de menú */
+function menu() {
+  window.location.href = "/src/views/menu.html";
+}

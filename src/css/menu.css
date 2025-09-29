@@ -8,6 +8,103 @@
     font-style: normal;
 
 }
+
 body {
     background-color: #E9E294;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFB703;
+
+    img {
+        width: 10%;
+        height: 15vh;
+        position: absolute;
+        left: 30%;
+        top: 0;
+        object-fit: contain;
+    }
+
+    strong {
+        font-size: 2.5rem;
+        position: relative;
+        left: 40%;
+        top: 20%;
+    }
+}
+
+nav {
+    width: 100%;
+    height: 8vh;
+    background-color: #FB8500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+        display: flex;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: #AC5C02;
+                font-size: 1.2rem;
+                font-weight: bold;
+                margin: 0 6.5rem;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+}
+
+.menu-cards {
+    width: 90%;
+    position: relative;
+    top: 5vh;
+    left: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 28px;
+    div {
+        width: 30%;
+        height: 40vh;
+        background-color: #FFB703;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: #FFB703 0px 0px 15px;
+        transition: all 0.3s ease;
+        img {
+            min-width: 40%;
+            min-height: 10vh;
+            object-fit: contain;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            border-radius: 20px;
+        }
+        span {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        button {
+            width: 40%;
+            height: 40vh;
+            border-radius: 10px;
+            border: none;
+            background-color: #FB8500;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+    }
 }
