@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+    font-family: "SUSE Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+}
+
+body {
+    background-color: #E9E294;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    background-color: #101313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    strong {
+        font-size: 2.5rem;
+        color: #FFB703;
+    }
+}
+
+.logo {
+    width: 20%;
+    height: 30vh;
+    position: absolute;
+    left: 15%;
+    top: 20vh;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.container {
+    width: 50%;
+    height: 80vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #101313b4;
+    position: relative;
+    left: 25%;
+    top: 33vh;
+    article{
+        position: absolute;
+        top: 10vh;
+        left: 20%;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+.tab-buttons{
+    display: flex;
+    gap: 5rem;
+    button{
+        width: 10rem;
+        height: 3rem;
+        border-radius: 50px;
+        border: none;
+        background-color: #B7803B;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        outline: 1px solid #fff;
+        box-shadow: 0px 5px 5px rgb(255, 255, 255);
+    }
+}
+.form-content{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    input{
+        width: 20rem;
+        height: 2.5rem;
+        border-radius: 20px;
+        color: #000000;
+        background-color: #FFB703;
+        border: none;
+        padding-left: 1rem;
+        font-size: 1rem;
+        box-shadow: 0px 5px 5px rgb(255, 255, 255);
+    }
+    button{
+        width: 10rem;
+        height: 3rem;
+        border-radius: 50px;
+        border: none;
+        background-color: #FB8500;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+       box-shadow: 0px 5px 5px rgb(255, 255, 255);
+    }
+}

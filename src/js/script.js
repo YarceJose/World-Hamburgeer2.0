@@ -42,3 +42,7 @@ next.addEventListener("click", () => {
 function menu() {
   window.location.href = "/src/views/menu.html";
 }
+/* Funcion de redirecion a la vista de login o registro*/
+function login() {
+  window.location.href = "/src/views/login.html";
+}
