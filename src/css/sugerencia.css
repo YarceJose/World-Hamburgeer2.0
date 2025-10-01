@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+    font-family: "SUSE Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+}
+
+body {
+    background-color: #FFB703;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    background-color: #101313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    strong {
+        font-size: 2.5rem;
+        color: #FFB703;
+    }
+}
+
+.formulario-sugerencia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 20vh;
+    left: 0;
+
+    .label {
+        font-size: 1.5rem;
+        color: #101313;
+        margin-top: 8vh;
+        position: relative;
+        left: -11%;
+    }
+
+    input {
+        width: 30%;
+        height: 5vh;
+        border-radius: 10px;
+        margin: 15px;
+
+    }
+
+    article {
+        min-width: 90%;
+        margin: 18px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h2 {
+        position: relative;
+        left: -42%;
+    }
+
+    textarea {
+        width: 100%;
+        height: 50vh;
+        border-radius: 10px;
+        margin-top: 2vh;
+        font-size: 2rem;
+    }
+
+    button {
+        width: 10%;
+        height: 5vh;
+        border-radius: 10px;
+        margin-top: 2vh;
+        background-color: #101313;
+        color: #FFB703;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+}
+

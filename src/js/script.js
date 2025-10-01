@@ -46,3 +46,7 @@ function menu() {
 function login() {
   window.location.href = "/src/views/login.html";
 }
+/* Funcion de redireccion  */
+function sugerencias() {
+  window.location.href = "/src/views/usuario.html";
+}
