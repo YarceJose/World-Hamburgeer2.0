@@ -37,8 +37,7 @@ next.addEventListener("click", () => {
   moverCarrusel(index);
 });
 
-
-/* Funcion de redireccion ah la vista de menú */
+/* Funcion de redireccion a la vista de menú */
 function menu() {
   window.location.href = "/src/views/menu.html";
 }
@@ -48,5 +47,9 @@ function login() {
 }
 /* Funcion de redireccion  */
 function sugerencias() {
-  window.location.href = "/src/views/usuario.html";
+  window.location.href = "/src/views/sugerencia.html";
+}
+/* funcion de redireccion a la vista de las sedes de la empresa */
+function sedes() {
+  window.location.href = "/src/views/sedes.html";
 }

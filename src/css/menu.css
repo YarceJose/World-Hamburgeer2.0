@@ -1,42 +1,43 @@
 * {
     margin: 0;
     padding: 0;
-   /*  outline: 1px solid red; */
+    box-sizing: border-box;
     font-family: "SUSE Mono", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-
 }
 
 body {
     background-color: #E9E294;
+    color: #333;
 }
 
+/* Encabezado */
 header {
     width: 100%;
     height: 15vh;
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
     align-items: center;
     background-color: #FFB703;
-
-    img {
-        width: 10%;
-        height: 15vh;
-        position: absolute;
-        left: 30%;
-        top: 0;
-        object-fit: contain;
-    }
-
-    strong {
-        font-size: 2.5rem;
-        position: relative;
-        left: 40%;
-        top: 20%;
-    }
+    position: relative;
+    padding: 0 2rem;
 }
 
+header img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header strong {
+    font-size: 2.5rem;
+    color: #5C3D00;
+}
+
+/* Navegación */
 nav {
     width: 100%;
     height: 8vh;
@@ -44,67 +45,87 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
-    ul {
-        display: flex;
+nav ul {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+}
 
-        li {
-            list-style: none;
+nav ul li a {
+    text-decoration: none;
+    color: #5C3D00;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
 
-            a {
-                text-decoration: none;
-                color: #AC5C02;
-                font-size: 1.2rem;
-                font-weight: bold;
-                margin: 0 6.5rem;
-                transition: all 0.3s ease;
-            }
-        }
+nav ul li a:hover {
+    color: #FFF;
+    transform: scale(1.1);
+
+    &:active {
+        color: #E85D04;
     }
 }
 
+
+/* Sección de Cards */
 .menu-cards {
     width: 90%;
-    position: relative;
-    top: 5vh;
-    left: 5%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.menu-cards .card {
+    background-color: #FFB703;
+    border-radius: 20px;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    margin: 28px;
-    div {
-        width: 30%;
-        height: 40vh;
-        background-color: #FFB703;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        box-shadow: #FFB703 0px 0px 15px;
-        transition: all 0.3s ease;
-        img {
-            min-width: 40%;
-            min-height: 10vh;
-            object-fit: contain;
-            position: relative;
-            left: 0px;
-            top: 0px;
-            border-radius: 20px;
-        }
-        span {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        button {
-            width: 40%;
-            height: 40vh;
-            border-radius: 10px;
-            border: none;
-            background-color: #FB8500;
-            font-size: 1rem;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-    }
+    justify-content: space-between;
+    padding: 1rem;
+    height: 300px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-cards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.menu-cards .card img {
+    width: 60%;
+    max-height: 120px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.menu-cards .card span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #3A2C00;
+    text-align: center;
+}
+
+.menu-cards .card button {
+    width: 60%;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    background-color: #FB8500;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-cards .card button:hover {
+    background-color: #E85D04;
+    transform: scale(1.05);
 }

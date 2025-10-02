@@ -11,28 +11,34 @@
     <title>World Hamburgeer</title>
 </head>
 <html>
-<header>
-    <strong>Iniciar</strong>
-</header>
-<!-- logo -->
-<div class="logo"><img src="/src/img/ChatGPT Image 25 sept 2025, 21_37_07.png" alt=""></div>
-<!--  -->
-<section class="container">
-    <!-- Secccion de botones independientes -->
-    <article class="tab-buttons">
-        <button class="tab-button">Iniciar</button>
-        <button class="tab-button">Registrar</button>
-    </article>
-    <form id="form-login" class="form-content">
-
-        <input type="text" placeholder="nombre o correo electrónico">
-        <input type="password" placeholder="contraseña">
-        <button>Iniciar Sesion</button>
-
-    </form>
-</section>
 
 <body>
+    <header>
+        <strong>Iniciar</strong>
+    </header>
+    <!-- logo -->
+    <div class="logo"><img src="/src/img/ChatGPT Image 25 sept 2025, 21_37_07.png" alt=""></div>
+    <!--  -->
+    <section class="container">
+        <!-- Secccion de botones independientes -->
+        <article class="tab-buttons">
+            <button onclick="mostrarLogin()" class="tab-button">Iniciar</button>
+            <button onclick="mostrarRegistro()" class="tab-button">Registrar</button>
+        </article>
+        <form id="form-login" class="form-content">
+            <input type="text" placeholder="nombre o correo electrónico">
+            <input type="password" placeholder="contraseña">
+            <button>Iniciar Sesion</button>
+        </form>
+        <form id="form-registro" class="form-content">
+            <input class="input" placeholder="email" id="email" name="email" required />
+            <input class="input" placeholder="password" id="password" name="password" required />
+            <input class="input" placeholder="name" id="nombre" name="nombre" required />
+            <button type="submit" class="login-btn">Registrarse</button>
+        </form>
+    </section>
+
+    <script src="/src/js/login.js"></script>
 </body>
 
 </html>

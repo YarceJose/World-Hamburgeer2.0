@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-       outline: 1px solid red;
+    /*   outline: 1px solid red; */
     font-family: "SUSE Mono", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
@@ -58,6 +58,7 @@ header {
             color: #AC5C02;
             font-size: 1rem;
             font-weight: bold;
+            cursor: pointer;
         }
     }
 
@@ -158,6 +159,7 @@ header {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     background: #000;
+
     .carrusel-contenedor {
         width: 100%;
         height: 100%;
@@ -170,6 +172,7 @@ header {
         height: 100%;
         display: flex;
         justify-content: center;
+
         img {
             width: 100%;
             height: 100%;
